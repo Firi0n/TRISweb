@@ -1,0 +1,102 @@
+
+:root{
+    /*Variabili colori per cambio tema*/
+    --primaryColor: rgb(0, 0, 0);
+    --secondaryColor: rgb(255, 255, 255);
+    --tertiaryColor: rgba(255, 255, 255, 0.2);
+    --quaternaryColor: rgba(255, 255, 255, 0.25);
+    /*Variabile bordi*/
+    --bordi: 1px var(--secondaryColor) solid;
+    /*Set colori*/
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    /*Set font*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*Allineamento centrale testo*/
+    text-align: center;
+}
+
+#titolo{
+    /*Centrare*/
+    margin: auto;
+    /*Distaccamento da margine superiore testo*/
+    margin-top: 4vh;
+}
+
+#turnoDi{
+    /*Centrare*/
+    margin: auto;
+    /*Distaccamento da margine superiore testo*/
+    margin-top: 4vh;
+    /*Distaccamento da margine inferiore testo*/
+    margin-bottom: 4vh;
+}
+
+/*Grandezza font*/
+h1{
+    font-size: 8vh;
+}
+
+h2{
+    font-size: 4vh;
+}
+
+h3{
+    font-size: 2vh;
+}
+
+table{
+    /*Centrare*/
+    margin: auto;
+    /*Unione margini caselle tabella tabella*/
+    border-collapse: collapse;
+}
+
+td{
+    /*Grandezza caselle*/
+    width: 18vmin;
+    height: 18vmin;
+    /*Grandezza testo caselle*/
+    font-size: 12vmin;
+}
+
+/*Colore al passaggio del mouse*/
+td:hover, #tema:hover, #ricominciare:hover{
+    background-color: var(--tertiaryColor);
+}
+
+/*Colore click mouse*/
+td:active, #tema:active, #ricominciare:active{
+    background-color: var(--quaternaryColor);
+}
+
+/*Bordi tabella visibili*/
+#casella1, #casella2, #casella3, #casella4, #casella5, #casella6{
+    border-bottom: var(--bordi);
+}
+
+#casella1, #casella4, #casella7, #casella2, #casella5, #casella8{
+    border-right: var(--bordi);
+}
+
+#ricominciare{
+    /*Tasto ricominciare invisibile*/
+    display: none;
+    /*Centrare*/
+    margin: auto;
+    /*Distaccamento da margine superiore*/
+    margin-top: 4vh;
+    /*Larghezza pulsaante ricominciare*/
+    width: 54vmin;
+    /*Bordi visibili*/
+    border: var(--bordi);
+}
+
+#tema{
+    /*Centrare*/
+    margin: auto;
+    /*Larghezza pulsaante tema*/
+    width: 15vh;
+    /*Bordi visibili*/
+    border: var(--bordi);
+}

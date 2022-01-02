@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <!--Titolo pagina-->
+        <title>TRIS</title>
+        <!--Configurazione di adattamento ai disposititvi più set caratteri-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <!--Link foglio di stile-->
+        <link rel="stylesheet" type="text/css" href="stile.css">
+        <!--Titolo testo-->
+        <h1 id="titolo">T R I S</h1>
+        <!--Pulsante tema-->
+        <h3 id="tema" onclick="cambioTema()">Tema: Scuro</h3>
+    </head>
+    <body>
+        <!--Testo turno / vittoria-->
+        <h2 id="turnoDi"></h2>
+        <!--Tabella tris-->
+        <table id="campo">
+            <!--Righe-->
+            <tr>
+                <!--Colonne-->
+                <td id="casella1" onclick="fPulsante('casella1', 1)"></td>
+                <td id="casella2" onclick="fPulsante('casella2', 2)"></td>
+                <td id="casella3" onclick="fPulsante('casella3', 3)"></td>
+            </tr>
+            <tr>
+                <td id="casella4" onclick="fPulsante('casella4', 4)"></td>
+                <td id="casella5" onclick="fPulsante('casella5', 5)"></td>
+                <td id="casella6" onclick="fPulsante('casella6', 6)"></td>
+            </tr>
+            <tr>
+                <td id="casella7" onclick="fPulsante('casella7', 7)"></td>
+                <td id="casella8" onclick="fPulsante('casella8', 8)"></td>
+                <td id="casella9" onclick="fPulsante('casella9', 9)"></td>
+            </tr>
+        </table>
+
+        <script src="programma.js"></script>
+    </body>
+    <footer>
+        <!--Tasto per ricominciare-->
+        <h2 id="ricominciare" onclick="ripeti()">Ricomincia</h2>
+    </footer>
+</html>
